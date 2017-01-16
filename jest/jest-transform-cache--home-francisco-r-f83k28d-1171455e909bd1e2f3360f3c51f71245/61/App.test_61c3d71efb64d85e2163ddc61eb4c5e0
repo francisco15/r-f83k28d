@@ -1,0 +1,23 @@
+/* istanbul ignore next */'use strict';var _jsxFileName = '/home/francisco/r-f83k28d/src/App.test.js';var /* istanbul ignore next */_react = require('react'); /* istanbul ignore next */var _react2 = _interopRequireDefault(_react);
+var /* istanbul ignore next */_enzyme = require('enzyme');
+var /* istanbul ignore next */_App = require('./App'); /* istanbul ignore next */var _App2 = _interopRequireDefault(_App);function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+
+it('renders without crashing', () => {
+  /* istanbul ignore next */(0, _enzyme.shallow)( /* istanbul ignore next */_react2.default.createElement( /* istanbul ignore next */_App2.default, /* istanbul ignore next */{ __source: { fileName: _jsxFileName, lineNumber: 6 }, __self: undefined }));
+});
+
+it('renders the value', () => {
+  const wrapper = /* istanbul ignore next */(0, _enzyme.shallow)( /* istanbul ignore next */_react2.default.createElement( /* istanbul ignore next */_App2.default, /* istanbul ignore next */{ __source: { fileName: _jsxFileName, lineNumber: 10 }, __self: undefined }));
+  expect(wrapper.find('.value').length).toBe(1);
+});
+
+it('renders the button', () => {
+  const wrapper = /* istanbul ignore next */(0, _enzyme.shallow)( /* istanbul ignore next */_react2.default.createElement( /* istanbul ignore next */_App2.default, /* istanbul ignore next */{ __source: { fileName: _jsxFileName, lineNumber: 15 }, __self: undefined }));
+  expect(wrapper.find('button#inc').length).toBe(1);
+});
+
+it('increments the value', () => {
+  const wrapper = /* istanbul ignore next */(0, _enzyme.shallow)( /* istanbul ignore next */_react2.default.createElement( /* istanbul ignore next */_App2.default, /* istanbul ignore next */{ __source: { fileName: _jsxFileName, lineNumber: 20 }, __self: undefined }));
+  wrapper.find('button').simulate('click');
+  expect(wrapper.find('.value').text()).toBe("1");
+});

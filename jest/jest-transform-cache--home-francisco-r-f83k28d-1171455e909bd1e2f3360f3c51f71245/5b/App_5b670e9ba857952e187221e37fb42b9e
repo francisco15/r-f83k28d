@@ -1,0 +1,31 @@
+/* istanbul ignore next */'use strict';Object.defineProperty(exports, "__esModule", { value: true });var _jsxFileName = '/home/francisco/r-f83k28d/src/App.js';var /* istanbul ignore next */_react = require('react'); /* istanbul ignore next */var _react2 = _interopRequireDefault(_react);
+/* istanbul ignore next */require('./App.css'); /* istanbul ignore next */function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+
+class App extends /* istanbul ignore next */_react.Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      count: 0,
+      increment: 1 };
+
+  }
+
+  increment() {
+    let count = this.state.count;
+    let increment = this.state.increment;
+    let newCount = count += increment;
+    this.setState({ count: newCount });
+  }
+
+  render() {
+    return (
+      /* istanbul ignore next */_react2.default.createElement( /* istanbul ignore next */'div', /* istanbul ignore next */{ __source: { fileName: _jsxFileName, lineNumber: 23 }, __self: this },
+        /* istanbul ignore next */_react2.default.createElement( /* istanbul ignore next */'span', /* istanbul ignore next */{ className: 'value', __source: { fileName: _jsxFileName, lineNumber: 24 }, __self: this }, this.state.count),
+        /* istanbul ignore next */_react2.default.createElement( /* istanbul ignore next */'button', /* istanbul ignore next */{ id: 'inc', onClick: this.increment.bind(this), __source: { fileName: _jsxFileName, lineNumber: 25 }, __self: this }, /* istanbul ignore next */'Incrementa')));
+
+
+  }} /* istanbul ignore next */exports.default =
+
+
+App;
